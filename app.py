@@ -22,7 +22,7 @@ def get_gemini_response(input):
 def input_pdf_text(uploaded_file):
     reader = pdf.PdfReader(uploaded_file)
     text = ""
-    for page in reader(len(reader.pages)):
+    for page in reader (reader.pages):
         page = reader.pages[page]
         text+= str(page.extract_text())
     return text
@@ -30,7 +30,7 @@ def input_pdf_text(uploaded_file):
 
 ## Prompt Template
 
-input_prompt = ""
+
 
 input_prompt = """
 Hey Act Like a skilled or very experience ATS(Application Tracking System) with a deep understanding of tech field, software engineering,data science, data analyst and big data engineer.Your task is to evaluate the resume based on the job description .You must consider the job market is very competitive and you should provide best assistance to the user.
